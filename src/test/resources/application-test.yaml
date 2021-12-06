@@ -1,0 +1,19 @@
+spring:
+  datasource:
+    url: jdbc:h2:mem:testdb
+    driverClassName: org.h2.Driver
+  jpa:
+    generate-ddl: true
+    hibernate:
+      ddl-auto: create-drop
+    database-platform: org.hibernate.dialect.H2Dialect
+  flyway:
+    enabled: false
+
+jwt:
+  header: Authorization
+  secret: swecor
+  expiration: 604800
+upload:
+  path: C:/opt/aerotek/content-storage
+  owner: SYSTEM
